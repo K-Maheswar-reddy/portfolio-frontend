@@ -12,7 +12,7 @@ const ContactInfo = () => {
     return (
         <div>
             {/**fixed contact section */}
-            <div className="bg-neutral-800 py-20 px-6 md:px-20 lg:px-40 shadow-xl shadow-white/20 text-white">
+            <div className="bg-neutral-800 py-32 px-6 md:px-20 lg:px-40 shadow-xl shadow-white/20 text-white">
                 {users.map((profile, index) => (
                     <div key={profile._id || index} className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
 
