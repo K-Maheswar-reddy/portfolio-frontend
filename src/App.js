@@ -21,7 +21,7 @@ function AppContent() {
     return (
       <div className="flex justify-center items-center h-screen text-xl text-indigo-600">
         <AiOutlineLoading className="animate-spin mr-3 text-3xl" />
-        Loading Portfolio Data...
+        Hey, I’m Mahesh 👋 Just a sec… 🚀
       </div>
     )
   }
