@@ -52,7 +52,7 @@ function AppContent() {
         <ExperienceDisplay />
       </div>
 
-      <div id='downloadresume'>
+      <div>
         <DownloadResume />
       </div>
 
