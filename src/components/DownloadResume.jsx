@@ -1,17 +1,22 @@
-import React from "react";
-import { Download } from "lucide-react"; // icon library
+import { FaDownload } from "react-icons/fa";
 
-const DownloadResume = () => {
+function ResumeDownload() {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/Maheswar.R.pdf"; // file path in public folder
+    link.download = "Maheswar.R.pdf"; // filename when downloaded
+    link.click();
+  };
+
   return (
-    <a
-      href="/resume.pdf"
-      download="Mahe_K_Resume.pdf"
-      className="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-2xl shadow hover:bg-blue-700 transition-all"
+    <button
+      onClick={handleDownload}
+      className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg"
     >
-      <Download size={20} />
+      <FaDownload />
       Download Resume
-    </a>
+    </button>
   );
-};
+}
 
-export default DownloadResume;
+export default ResumeDownload;
