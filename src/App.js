@@ -11,7 +11,6 @@ import SkillsDisplay from './components/Skills';
 import { DataProvider, useData } from './context/DataContext';
 import { AiOutlineLoading } from 'react-icons/ai';
 import { BiErrorCircle } from 'react-icons/bi';
-import DownloadResume from "./DownloadResume";
 
 function AppContent() {
   const { loading, error } = useData();
@@ -50,11 +49,7 @@ function AppContent() {
 
       <div id='experience'>
         <ExperienceDisplay />
-      </div>
-
-      <div>
-        <DownloadResume />
-      </div>
+      </div> 
 
       <div id='skill'>
         <SkillsDisplay />
