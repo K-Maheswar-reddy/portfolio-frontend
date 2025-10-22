@@ -1,6 +1,6 @@
 import { FaDownload } from "react-icons/fa";
 
-function ResumeDownload() {
+function DownloadResume() {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = "/Maheswar.R.pdf"; // file path in public folder
@@ -10,7 +10,7 @@ function ResumeDownload() {
 
   return (
     <button
-      onClick={handleDownload}
+      onClick={DownloadResume}
       className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg"
     >
       <FaDownload />
@@ -19,4 +19,4 @@ function ResumeDownload() {
   );
 }
 
-export default ResumeDownload;
+export default DownloadResume;
