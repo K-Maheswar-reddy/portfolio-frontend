@@ -10,7 +10,7 @@ function DownloadResume() {
 
   return (
     <button
-      onClick={DownloadResume}
+      onClick={handleDownload}
       className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg"
     >
       <FaDownload />
