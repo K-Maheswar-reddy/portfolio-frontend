@@ -52,6 +52,10 @@ function AppContent() {
         <ExperienceDisplay />
       </div>
 
+      <div id='downloadresume'>
+        <DownloadResume />
+      </div>
+
       <div id='skill'>
         <SkillsDisplay />
       </div>
@@ -74,7 +78,6 @@ function AppContent() {
 function App() {
   return (
     <div className="App">
-      <DownloadResume />
       <DataProvider>
         <AppContent></AppContent>
       </DataProvider>
