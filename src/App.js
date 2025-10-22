@@ -11,7 +11,7 @@ import SkillsDisplay from './components/Skills';
 import { DataProvider, useData } from './context/DataContext';
 import { AiOutlineLoading } from 'react-icons/ai';
 import { BiErrorCircle } from 'react-icons/bi';
-
+import DownloadResume from "./DownloadResume";
 
 function AppContent() {
   const { loading, error } = useData();
@@ -74,6 +74,7 @@ function AppContent() {
 function App() {
   return (
     <div className="App">
+      <DownloadResume />
       <DataProvider>
         <AppContent></AppContent>
       </DataProvider>
